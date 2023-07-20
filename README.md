@@ -1,16 +1,28 @@
 # Test task User-Company API
 
-## Test connection
-http://localhost:8080/test
-
 ## Installation
 
+```
+cp .env.example .env
+```
+Add DB settings to `.env` file:
+```
+DB_CONNECTION=pgsql
+DB_HOST=db
+DB_PORT=5432
+DB_DATABASE=lumen
+DB_USERNAME=postgres
+DB_PASSWORD=secret
+```
+Generate `API_KEY` and put it in `.env` file.
 ```
 composer install &&
 php artisan migrate &&
 php artisan db:seed &&
 php artisan swagger-lume:generate
 ```
+## Test connection
+http://localhost:8080/test
 
 To add extra data use
 ```
