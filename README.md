@@ -1,5 +1,8 @@
 # Test task User-Company API
 
+## Test connection
+http://localhost:8080/test
+
 ## Installation
 
 ```

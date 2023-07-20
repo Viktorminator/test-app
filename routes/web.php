@@ -33,7 +33,7 @@ $router->group(['middleware' => 'auth'], function () use ($router) {
     });
 });
 
-$router->get('/', function () use ($router) {
+$router->get('/test', function () use ($router) {
     try {
         DB::connection()->getPdo();
         print_r("Connection is ok <br>");
